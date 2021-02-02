@@ -1,0 +1,498 @@
+* Introduction
+** What are signal and system ? Why we need to study ? 
+  - Eg: Design a under water radar to detecting Chinese submarine
+*** What is signal ? 
+- A physcial quantity that can convey information
+  - information about some phenomeno which varies in space and time.
+   - eg: video,audio,temperature,i,v, power,
+**** Mathematical Model / Mathematical Defination of Signal:
+- A signal can represented as a function/mapping which has variation/pattern/change of some quantity with respective space and time.
+  - Defination of function: Function is collection of order-pairs $<x_1,y_1> \in f$ , where $x_1 \in X$  and $y_1 \in Y$  X is Domain Set and Y is Range Set
+    - $f:X \to Y$ 
+    - f is also a set but set of order-pairs <x,y>
+    - For Genralization we don't care about what type of signal in input to system
+  
+*** What is a System  ?
+- The device which take atleast one or more input/signal and process it to produce a desired output.
+**** How can we design a best system ? or What is quality of best system ?
+system with low-cost, efficient,accurate ,robust-to-noise(signal noise , system parameters, environment),stable,low-maintainance  
+
+**** Application of SS ?
+- Foundation or basics for designing system like radar,wired/wireless communication.
+  - application : 
+    - Electrical     : power sys , smart grid
+    - Electronic     : TV, mobile, audio(), image(compression,,glare-removal,blur-removal,resotration),video(compression,blur-removal,motion capture)
+    - Communication  : wire/wireless communication(FM) 
+    - Antenna        : radar,satellite communication
+    - Instrumentation : aircraft control,
+
+**** Foundatation Courses in ECE:
+     - Signal and System 
+       - Communications 
+         - Wire/ Wireless
+       - Radar, Satellite Communication
+
+     - Control System
+       - power system
+       - smart grid
+       - Digital Control System 
+         - IoT
+         - Robotics
+       - Meachine Learning and Neual Networks
+
+     - Instrumentation (SS and CS):
+
+     - Basic Electronics   
+       - Analog Circuts
+       - Digital Circuts
+         - Microprocess and Microcontrollar
+           - Computer Architecture(RISC,CISC) 
+           - VLSI (SIFIVE: RISC)  
+
+**** What we will discussing in this course 
+  - principles and properties of signal
+  - principles and properties of system
+  - How signal and system interactive with each other ?
+  - Desing a system for a given input to get the desired output
+
+* Signal
+**  What is signal ? 
+*** Defination of Signal
+    - A physcial quantity that can convey information about phenomeno which varies in space and time.
+      - eg: video,audio,temperature,i,v, power,
+*** Mathematical Model of Signal or Mathematical Defination of Signal
+- A signal can represented as a function/mapping which has variation/pattern/change of some quantity with respective space and time.
+
+-Also Defination As: Defination of function: Function is collection of order-pairs $<x_1,y_1> \in f$ , where $x_1 \in X$  and $y_1 \in Y$  X is Domain Set and Y is Range Set
+    - $f:X \to Y$
+    - f is also a set but set of order-pairs <x,y>
+    - eg: f{<x1,y1> <x2,y2> <x3,y3> <x4,y4>.......etc}
+    - for image Domain is Cartesian Co-ordinate and Range is [red,blue,green]
+      - ${f_{Img}: \mathbb{R}^2 \to \mathbb{R}^3}$
+      - $f_{Img} (x,y) = [r,b,g]$   
+- For Genralization we don't care about what type of signal in input to system
+
+**** Properties of functions
+- For any $x \in X$  ; can apper exactly in one order pair in f
+  - eg: Not a function: f {<a,b> <b,a>}
+  - eg: NO.of Elements in X = m and NO.of Elements in Y = n
+        how many functions can be possible ?
+        max No. of elements present is functions ?
+**** Operations
+  - additive : 
+          < x1,y1 > + < x2,y2 > = < x1+x2 , y1+y2 >
+  - multiplicative:
+           a.f(a.x1 + b.x2) = a.y1 + b.y2
+
+**** different type of functions
+***** one-one (injective signal)
+Defination: A map is injective $\iff$ {all different $i/p$  produce different $o/p$ }
+ - if $x_1 \to y_1$ and  $x_2 \to y_2$
+   for $f_{one-one}  \iff \begin{cases}x_1\neq x_2 \iff y_1 \neq y_2\\x_1= x_2 \iff y_1 = y_2 \end{cases}$
+   
+   - Eg: sin(x) not one-one,    
+Note:  invertable system it should be one-one function or injective 
+***** onto    (surjective signal)
+ - Defination: A map is surjective if and only for all y bleongs Y there exist x bleongs X such that f(x) =y or $f:x \to y$
+   - if  $f_{onto}\quad is\quad onto  \iff \forall y \in Y \quad \exists \quad x \in X \mid f_{onto}: x \to y$
+
+** Basic signal and Basic Operation
+*** Basic Operation 
+**** Time Shift
+  - time shift to right by $t_o$ : $x(t-t_o)$
+  - time shift to left by $t_o$  : $x(t+t_o)$
+**** Time Multiplication
+  - time in slow motion by a>1 times : x(t/a) or Widenes(Expands) signal in Time Domain
+  - time in fast motion by a>1 times : x(at)  or Narrows signal in Time Domain
+
+  - x(at) ;For a > 0 
+    - if 0<a<1 => Widenes or Expands x(t) in Time Domain
+    - if a > 1 => Narrow or Compress  x(t) in Time Domain
+**** Amplitude Multiplication
+  - a.x(t) ; if a>1    Amplify the x(t) by a times
+  - a.x(t) ; if 0<a<1  attanuate x(t) by a times
+**** Amplitude Shifting
+  - if A > 0 ;  A + x(t) Shift signal up by A units
+  - if A < 0 ;  A + x(t) Shift signal down by A units
+**** TODO Differentiation 
+**** TODO Integration
+**** Convoulution
+A convolution is an integral that expresses the amount of overlap of one function $x_1$ as it is shifted over another function $x_2$.
+$y(t) = x_1(t) \circledast  x_2(t)$
+Convolution is more often taken over an infinite range
+- -$y(t)= [x_1 \ast x_2](t) = \int_{-\infty}^{\infty} x_1(\tau)\,x_2(t-\tau) {d}\tau$
+- $y(t)= [x_1 \ast x_2](t) = \int_{-\infty}^{\infty} x_2(\tau)\,x_1(t-\tau) {d}\tau$
+- $x(t) \circledast h(t) &= y(t)$
+- $X(f) H(f) &= Y(f)$
+***** Properties
+****** Associative
+- $\int_{-\infty}^{\infty} x_1(\tau)\,x_2(t-\tau) {d}\tau = \int_{-\infty}^{\infty} x_2(\tau)\,x_1(t-\tau) {d}\tau$
+- $[x_1 \ast x_2](t) = [x_2 \ast x_1](t)$
+- $x_1 \ast [x_2 \ast x_3](t) = [x_1 \ast x_2]\ast x_3(t)$
+- $x_1 \ast[ x_2 + x_3] = [x_1 \ast x_2] + [x_1 \ast x_3]$
+****** impluse responce
+- $\int x(t) \ast \delta(t-t_o) = x(t-t_o)$
+- Convolution of $i/p$ singal and  impluse which is timeshift by $t_o$ is sample value of $i/p$ at $t_o$ 
+****** step responce
+- $\int x(t) \ast u(t-t_o) = \int_{-\infty}^{t-t_o}x(t)$
+- Convolution of $i/p$ signal and step function shifted by $t_o$ is area of left side upto $t-t_o$
+
+- $\int x(t) \ast u(t) = \int_{-\infty}^{t}x(t)$
+- Convolution of $i/p$ signal and step function shifted by $t_o$ is area of left side upto $t$
+
+
+****** derivative
+- $\frac{d}{dt}[x_1 \ast x_2]=\frac{d \,x_1(t)}{dt}\ast x_2 = \, x_1 \ast \frac{d\, x_2(t)}{dt}$
+- $(x_1 \ast x_2)^' = x^{'}_1 \ast x_2 = x_1 \ast x^{'}_2$
+- eg:
+- $\frac{d}{dt}[u(t) \ast r(t)]=\frac{d \,u(t)}{dt}\ast r(t) = \, \delta(t) \ast r(t) = r(t)$
+
+****** Time scaling
+- $x_1(at) \ast x_2(at) = \frac{1}{\mid a \mid} \, y(at)\, ,\, a\neq 0$
+****** Time delay
+- $x(t-t_1) \ast x(t-t_2) = y(t-(t_1+t_2))$
+-
+- eg:
+  - $u(t-2) \ast r(t-1) = ?$
+   - We know $u(t) \ast r(t) = \int_{-\infty}^{t} r(t){dt} = \frac{t^2}{2}u(t) = p(t)$
+     - then $u(t-2) \ast r(t-1) = p(t -(1+2)) = p(t-3) = \frac{(t-3)^2}{2}u(t-3)$
+****** Area
+- $y(t) = x_1(t) \ast x_2(t)$
+- $Area_y = Area_{x_1} . Area_{x_2}$
+
+****** Time interval cal tion for two finite interval signal
+ signal $\qquad$   time interval       
+
+-  $x_1(t) \qquad t_1 < t<t_2$       
+-  $x_2(t)\qquad t_3 < t<t_4$       
+-  $y(t)\qquad t_1+t_3<t<t_2+t_4$ 
+ 
+
+
+****** Note : 
+    - convolution of two rectangle pluse of equal duration will be a triangle
+    - convolution of two rectangle pluse of unequal duration will be a trapezoidal 
+
+**** TODO Correlation and Auto Correlation
+
+*** Basic Signals
+**** impluse and it properties
+***** propterites
+- $\int_{-\infty}^{\infty} \delta(t) = 1$
+- $\delta(at) = \frac{1}{\mid a\mid}\delta(t)\,;\,a\neq0$
+- $x(t) \ast \delta(t-t_o) = x(t_o) . \delta(t-t_o)$
+- impluse signal is neither engergy nor power signal
+- $\int_a^b x(t) \ast \delta(t-t_o) =  \begin{cases} x(t_o) \quad a\leq t_o \leq b \\0 \quad\quad\quad t_0 \not\in [a,b]\end{cases}$
+
+- $\int_a^b x(t) \ast \frac{d^n}{dt^n}[\delta(t-t_o)] =  \begin{cases} (-1)^n \frac{d^n x(t=t_o)}{dt^n} \quad t_o \in [a,b] \\0 \quad\quad\quad t_0 \not\in [a,b]\end{cases}$
+- Derivative of impluse fuction $\delta^{'}(t)$ is odd function
+
+**** unit step and impu
+- properties
+  - odd{u(t)} = $\frac{1}{2}sgn(t)$
+  - $\int \delta(t) {dt} = u(t)$  
+**** sgn fuction
+- $sgn(t) =  \begin{cases} 1 \quad t\geq 0 \\ 0 \quad t=0 \\-1 \quad t < 0  \end{cases}$
+- $u(t) = \frac{1+ sgn(t)}{2}$
+- $sgn(t) = 2u(t) -1$
+**** rect fucntion
+
+- $x(t)= A.rect(t/T) =  \begin{cases} 1 \quad t \in[-\frac{T}{2},\frac{T}{2}] \\ 0    \end{cases}$
+**** complex exponential signal 
+**** real exponential signal
+**** sinsoidal signal
+
+**** Sa(x) and Sinc(x)
+- $Sa(t) = \frac{sin(t)}{t}$
+- $\int Sa(t) {d}t  = \pi$
+- Energy of Sa(t) = $\pi$
+- $Sinc(t) = \frac{sin(\pi t)}{\pi t}$
+- $\int Sinc(t) {d}t  = 1$
+- Energy of Sinc function is 1
+**** TODO Gaussian Function
+
+- Discrete Time Signal
+  - impluse
+  - unit   
+
+** Classification of signal
+*** Continous-Time Signal / Discrete time Signal
+****  CT Signal
+
+$f_{CT} : \mathbb{R} \to \mathbb{R}$, $x(t) \to y(t)$
+**** DT Signal
+$f_{DT} : \mathbb{Z} \to \mathbb{R}$, $x[n] \to y[n]$
+- Note :
+  - Discrete Time signal is discrete in time Domain not in Discrete in Range Domain
+  - Discrete in Ranag Domain will is quantization of signal
+*** TODO Deterministic Signal / Random Signal
+- Deterministic Signal : It is completetly deterministic at any given time instant of time
+  - eg: sin($2\pi f_ct$),$e^t$
+
+- Random Signal : Take random value at diff time instance
+  - eg: +1 for head and -1 for tails
+  - eg: FM radio noise
+
+- It is fundamental in SS to understand behaviour and properties of noise so that we can overcome noise
+- $\because$ noise limit the performance of system
+
+*** Real Signal / Complex Signal 
+- S[t] = S*[t]   => S[t] is real signal   
+- S[t] = - S*[t] => S[t] is Imaginary Signal
+
+- $Re\{S[t]\} =\Re\{S[t]\} = S_r[t] = (S[t] + S^*[t])/2$
+- $Img\{S[t]\} = \Im\{S[t]\} = S_i[t] = (S[t] - S^*[t])/2j$
+  
+- $S[t] = S_r[t] + j. S_i[t]$
+-    $=  (S[t] + S^*[t])/2 + j. (S[t] - S^*[t])/2j$
+- Note : all communication signals are complex in nature
+*** Even Systemric Signal /Odd Systemric Signal      
+- S[t] =  S[-t]   => S[t] is Even signal
+- S[t] = -S[-t]   => S[t] is Odd signal
+
+- Even{S[t]} = Se[t] = (S[t] + S[-t])/2
+- Odd{S[t]}  = So[t] = (S[t] - S[-t])/2
+
+*** Conjugate Systmetric / Conjugate Anti symmetric function
+- S[t] = S*[-t]   => S[t] is Conjugate Sysmetric  
+- S[t] = - S*[-t] => S[t] is Conjugate ANTI SYSMETRIC
+
+- $S[t] = S_{CS}[t] + S_{CAS}[t]$
+-     $=  (S[t] + S^*[-t])/2 + (S[t] - S^*[-t])/2$
+-     $=  [ Even \{ \Re\{S[t]\}\} +j.Odd\{Img\{S[t]\} ]\quad +\quad [ Odd\{\Re\{S[t]\}\} + j.Even\{Img\{S[t]\}\}  ]$
+-
+- $S_{CS}[t]  = \frac{(S[t] + S^*[-t])}{2} =  Even \{ \Re\{S[t]\}\} +j.Odd\{Img\{S[t]\}$
+- $S_{CAS}[T] = \frac{S[t] - S^*[-t])}{2} =  Odd\{\Re\{S[t]\}\} + j.Even\{Img\{S[t]\}\}$
+   
+**** Real part of CS is even 
+- Re{ S_CS[t] } = (S_CS[t] +  S_CS*[t])/2
+-              = ( (S[t] + S*[-t])/2 +  (S[t] + S*[-t])*/2)/2 
+-              = ( S[t] + S*[-t] +  S*[t] + S[-t] )/4
+-              = ( S[t] + S*[t]  +  S*[-t] + S[-t] )/4
+-              = ( (S[t] + S*[t]) +  (S[-t] + S*[-t]) )/4
+-              = ( y[t] + y[-t] )/2
+-              =  Even{ y[t] }
+-              =  Even{ (S[t] + S*[t])/2 }
+- Re{ S_CS[t] } =  Even{ Re{S} }
+-
+- *THEREFORE* Real part of Conjugate Systmeric Signal is Even Signal
+
+**** Imaginary part of CS is odd 
+- $Img\{ S_{CS}[t]\}$ = $(S_{CS}[t] - S_{CS}^*[t])/2$
+-          = $( (S[t] + S^*[-t])/2 -  (S[t] + S^*[-t])^*/2)/2$ 
+-          = $( S[t] + S^*[-t] -  S^*[t] - S[-t]) )/4$
+-          = $( S[t] - S^*[t]  +  (S^*[-t] - S[-t]) )/4$
+-          = $( (S[t] - S^*[t]) -  (S[-t] - S^*[-t]) )/4$
+-          = $( y[t] - y[-t] )/2$
+-          =  $Odd\{ y[t] \}$
+-          =  $Odd\{ (S[t] - S^*[t])/2 \}$
+- $Re\{ S_{CS}[t] \}$ $=$ $Odd\{ Img\{S\} \}$
+-
+-
+- *THEREFORE* Imaginary part of Conjugate Systmeric Signal is Odd Signal
+**** Real part of CAS is odd 
+- Re{ S_CAS[t] } = (S_CAS[t] +  S_CAS*[t])/2
+-              = ( (S[t] - S*[-t])/2 +  (S[t] - S*[-t])*/2)/2 
+-              = ( S[t] - S*[-t] +  S*[t] - S[-t] )/4
+-              = ( S[t] + S*[t]  -  S*[-t] - S[-t] )/4
+-              = ( (S[t] + S*[t]) -  (S[-t] + S*[-t]) )/4
+-              = ( y[t] - y[-t] )/2
+-              = Odd{ y[t] }
+-              = Odd{ (S[t] + S*[t])/2 }
+- Re{ S_CS[t] } = Odd{ Re{S} }
+-
+- *THEREFORE* Real part of Conjugate Anti Systmeric Signal is Odd Signal
+
+**** Imaginary part of CAS is Even 
+- Img{ S_CS[t] } = (S_CAS[t] -  S_CAS*[t])/2
+-              = ( (S[t] - S*[-t])/2 -  (S[t] - S*[-t])*/2)/2 
+-              = ( S[t] - S*[-t] -  S*[t] + S[-t]) )/4
+-              = ( S[t] - S*[t]  -  S*[-t] - S[-t] )/4
+-              = ( (S[t] - S*[t]) +  (S[-t] - S*[-t]) )/4
+-              = ( y[t] + y[-t] )/2
+-              = Even{ y[t] }
+-              = Even{ (S[t] - S*[t])/2 }
+- Re{ S_CS[t] } = Even{ Img{S} }
+-
+- *THEREFORE* Real part of Conjugate Anti Systmeric Signal is Even Signal
+
+**** Properties
+- if s[t] is real and  conjugate symmetric then  s[t] should be even
+- if s[t] is real and  conjugate anti symmetric then  s[t] should be odd
+
+*** Finite Value Signal/ Infinite Value Signals
+ - Defination: Signal must be neccessarly defined for every value of Domain.
+   - $Finite \,Value \,Signla \iff \forall x \in X :\quad \mid x\mid < \infty$
+     - Eg: x(t) =1/t in not Finite Value Signal as $t \to 0$ then $x \to \infty$
+     - Eg: x(t) = { 1/t ; for all t!=0
+     -                 0  ; t =0
+*** Bounded Signal: 
+    - Defination: Signal that do not rise within the limit or $x_{max}$
+      
+      - |x(t)| <= B ;  $\forall t \in (-\infty, \infty)$ then x is bounded singal
+      - Note: all physical signal is bounded  ('.' any physical source can produce only limited signal)
+  
+
+*** Periodic Signal / Aperiodic Signal
+$x(t) = x(t \pm nT_o)$ ; 
+ - where $n \in \mathbb{Z} \quad n \in {-1,0,2,3,}$
+ - Fundamental Time Period(FTP): $T_o$ 
+
+For Discrete Time Signal
+- $x[n] = e^{j\Omega_o t}$
+- For x[n] to be periodic $\frac{\Omega_o} {2\pi}$ should be rational m/n form
+- FTP = $\frac {2\pi}{\Omega_o}$
+- frequency = $f_o = \frac{\Omega_o}{2\pi}$
+
+
+**** Properties
+x(at) ; FTP = $\frac{T_o}{|a|}$
+1. Time Period is independent of : 
+   - amplification $a.x(t)\quad ;\quad a\neq0$
+   - amplitude reveral $-x(t)$
+   - time shift $x(t + t_1)$
+   - time reversal $x(-t)$
+2. For DC or Constant Signal  FTP : Undefined; f_o = zero
+3. $f_o = 1/T_o$ ; valid only for Non-Constant Signal
+4. x1(t)and x2(t) has FTP T1 and T2 respectively then
+   - x1(t) + x2(t) is periodic only if T1/T2 is rational No 
+     - with FTP = LCM(T1,T2)
+     - f_o = GCM(T1,T2)
+
+*** Half-Wave Symmetric (HWS)
+$x(t) = -x(t \pm T_o/2)$
+
+eg : https://files.transtutors.com/cdn/assets/many-types-of-waves-can-exhibit-this-half-wave-symmetry.gif
+
+- Not HWS signal : sawtooth signal is not HWS 
+- if avg{Signal} =0 and signal is square, triangle,sin, then signal is HWS Signal
+
+*** Analog Signal / Digital Signal
+*** Energy Signal / Power Signal
+- Energy of x:  Ex(t) = $\int_{- \infty }^{\infty} |x(t)|^2 dt$
+- Energy of x:  Ex(t) = $\sum_{n = -\infty}^{\infty} {\mid x[n] \mid}^2$
+
+- if Engergy is finite $\iff$ x(t) is engergy signal
+- if 0 < E < $\infty\quad \iff$   x(t) is energy signal
+
+
+Power of x :
+- $P_x$(t) = $\lim_{t \rightarrow \infty} \frac{1}{T}  \int_{- \frac{T}{2} }^{\frac{T}{2}} {|x(t)|}^2 dt$
+- Power of x:  Px(t) = $\lim_{n \rightarrow \infty} \sum_{n = -\infty}^{\infty} \frac{1}{2N+1} {\mid x[n] \mid}^2$
+- if Power is finite $\iff$  x(t) is power signal
+- if 0 < P < $\infty\quad \iff$ x(t) is power signal
+- eg : $sin (2 \pi ft)$
+
+**** Energy and Power for orthogonal signal
+If x1(t), x2(t) are orthogonal
+ - orthogonal signal   $\iff \int^{\infty}_{-\infty} x1(t).x2(t) = 0$
+For y(t) = x1(t) + x2(t) and x1,x2 are orthogonal
+ - Ey(t) = Ex1(t) + Ex2(t)
+ - Py(t) = Px1(t) + Px2(t)
+
+* System
+- Defination : A mathematical model/representaion of physcial process/device that produces desire output signal for given input signal
+
+- Representation: y(t) = T( x(t) )
+  -           where T : Transformation or system
+  -                 x : input
+  -                 y : output
+
+** Types of System
+*** Memoryless System(Static System) / Memory System (Dynamic System)
+Memoryless System : If a sys is know as memoryless sys only if if o/p depends on current i/p at present time instance
+ - eg: y(t) = k.x(t)
+ - eg: v(t) = R.i(t)
+ - eg: y[n] = k.x[n]
+
+- Note : System Responce of Memoryless system  h(t) =K  $\delta(t)$  
+
+Memory System : If a sys o/p depenents not only current i/p instance but also past then sys is Memory System
+ - eg:$v(t) = \frac{1}{C} \int_{-\infty}^{t} i{(\tau)} d{\tau}$
+ - eg: $v(t) = L \frac{di}{dt}$
+
+*** Static System / Dynamic System
+- Static System : o/p dependen  only on precent value of i/p
+- Dynamic System : o/p dependen on past and future values of i/p at any time instance
+
+*** Causal /Non-Causal / Anti-Causal
+- Causal System : If o/p of sys is independent of current and past value of i/p then  sys is causal sysadmin
+  - eg: y(t) = x(t) + x(t-1)
+  - Re{x(t)} = x(t) +x*(t) /2
+  - $\int_{-\infty}^{\tau} x(t) dt$
+
+- Non-Causal System : If o/p of sys depends on future value of i/p at any instance of time
+  - eg:
+    - y(t) = x(-t)    ; y(-1) depends x(1)
+    - y(t) = x(t +1)  ; y(0) depends x(1)
+    - y(t) = $\int_{-\infty}^{\tau+1} x(t) dt$ ; y(0) depends x(1)
+
+- Anit-Causal System : A non-causal which o/p depends only on future value of i/p is callde anti-causal sys
+  - eg:
+    - y(t) = x(t+1)
+
+- Note : All Anti-Causal System are Non-Causal but not vice versa
+
+*** Linear /Non Linear System
+- Linear : follows superposition therome {additive and homogenitive}
+  - eg of Linear System : Even{x(t)} , d/dt( x(t) ), $\int x(t) dt$ , x(sin(t))
+  - eg of Non Linear System : 2 + x(t), x^2(t) , sin(x(t)) . Real{x}
+*** Time InVariant / Time Variant System
+- $f: x(t) \to y(t)$ and $f: x(t-t_o) \to y(t-t_o)$ then f is Time Invariant
+  - eg: t.x(t), x(2t), sint + x(t) , Even{x(t)}
+  - eg: Split in Time
+  - eg: y(t) = x(t) u(-t) + x(t+1)u(t)
+  - $\int_a^b x(t) \ast \delta(t-t_o) =  \begin{cases} x(t) \quad t< 0 \\x(t+1) \quad t\geq  0\end{cases}$
+
+- Note :
+  1. If co-efficient in sys dependent on time then sys is Time Invariant System.
+      Eg: sin(t).x(t)
+  2. If there is time scale either in x(t) or y(t) then sys is Time variant
+      Eg: y(t) = x(-t)
+  3. If added or subtracted a term which depends on time then sys will be time variant
+      Eg: y(t) = sin(t) + x(t)
+*** Linear Time Invariant System
+*** Invertable/ Non Invertable :
+- If there is one to one mapping btw i/p and o/p then sys is called invertable .
+
+- Non-Invertable: many to one mapping btw i/p and o/p then it is not possible to design inversse sys for this sys
+  - eg: y(t) = x^2(t) , y(t) = sin(x(t))
+
+- Note: y(t) = a(t) * i/p
+  - if a(t) = 0  at t $\in$ [a,b], then y(t) = 0 for t $\in$ [a,b] then sys will be non-invertable for t $t \in [a,b]$
+- $\therefore$ If $a(t) \neq 0$ ; $\forall$t $\Rightarrow$ sys is invertalbe
+     - eg: y(t) = (t^2+1)x(t)
+
+*** Stable System and  BIBO System
+- If ${|x(t)|\le \infty \Rightarrow |y(t)|\le \infty \quad;\, \forall t}$ then System is BIBO System
+
+- Stability of pratical sys is important
+  - and sys stability depends on i/p signal and (sys parameters: Sensitivity {Control System Topic})
+
+*** Feedback System 
+* Properties & Analysis of LTI system
+** Properties of Convolution
+** Properties of Memoryless LTI System
+** Properties of Causal LTI System
+** Eigen Function of LTI system
+** Stability of LTI system
+** Differentical Eq of LTI system
+** Above Propertiie of Discrete Time LTT system
+
+
+* Fouries Analysis
+** Fouries Series :
+** Trignometric Fouries Series:
+** Fourier Transfroms:
+** Distorstion Less Transmission
+
+* Laplace Transforms:
+* Z Tranforms
+* Filters [Ideal/Non Ideal]
+** Signal Bandwidth/ Spectrum Density
+** Bode Plot/ Phase Plot
+** Hilbert Transforms / Phase Shift 
+** Ideal Low Pass Filter(LPF)
+* Sampling Theory
+
+* Fourier Analysis of DT Signal (aperiodic)

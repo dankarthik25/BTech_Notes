@@ -1,0 +1,28 @@
+* Spacing 
+description 	size 	command 	example
+blank space 	flexible		word 1 → ← word 2
+no break space 	6/18 em \nobreakspace 	word 1 → ← word 2
+         	6/18 em 	  	word 1 →  ← word 2
+1em space 	1em 	 \quad 	        word 1 →     ← word 2
+2em space 	2em 	 \qquad 	word 1 →        ← word 2
+small spacing 	3/18em 	 \, 	        word 1 →  ← word 2
+own spacing 	flexible \hspace{1cm} 	word 1 →         ← word 2
+
+* such that
+There are multiple symbols commonly used to represent "such that"
+
+    ∍
+
+such that \backepsilon or ∋ \ni (such that 
+such that ∣ \mid (such that)
+such that : (such that )
+
+ symbols is that "|" is only readable as "such that" in class builders,
+ i.e. {x∈A∣P(x)} is read "the set of x in A such that P of x", and
+ ":" is only readable as such that in an existence quantifier,
+ i.e. ∃x∈A:P(x) is "there exists an x in A such that P of x"(
+
+ pandoc -s -r html https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols  --reference-location=block -o test.org
+
+ for symbaol
+ 

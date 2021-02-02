@@ -1,0 +1,359 @@
+#+TITLE: Bg. 3.1
+
+<<panel>>
+* Page Info
+  :PROPERTIES:
+  :CUSTOM_ID: page-info
+  :CLASS: pt-title
+  :END:
+
+[[https://vedabase.io/en/accounts/login/?next=/en/library/bg/3/1/][//
+Add Bookmark]]
+
+Share
+
+[[https://vedabase.io/en/library/bg/3/1/][//]]
+[[https://www.facebook.com/sharer.php?u=https%3A//vedabase.io/en/library/bg/3/1/][//]]
+[[https://twitter.com/intent/tweet?url=https%3A//vedabase.io/en/library/bg/3/1/][//]]
+[[https://www.vk.com/share.php?url=https%3A//vedabase.io/en/library/bg/3/1/][//]]
+
+Categorization
+
+To add category please select specific paragraph and use Paragraph Menu.
+
+<<mm-7>>
+
+Switch to different view
+
+- [[https://vedabase.io/en/library/bg/3/advanced-view/#bb871][Show in
+  Advanced View]]
+- [[#mm-8][Open submenu (Dual Language View)]]Dual Language View
+
+<<mm-8>>
+
+[[#mm-7][Close submenu (Dual Language View)]][[#mm-7][Dual Language
+View]]
+
+- [[https://vedabase.io/en/library/bg/3/1/side-by-side/bg/][Български
+  (Bulgarian)]]
+- [[https://vedabase.io/en/library/bg/3/1/side-by-side/ja/][日本語
+  (Japanese)]]
+- [[https://vedabase.io/en/library/bg/3/1/side-by-side/ko/][한국어
+  (Korean)]]
+- [[https://vedabase.io/en/library/bg/3/1/side-by-side/hu/][Magyar
+  (Hungarian)]]
+- [[https://vedabase.io/en/library/bg/3/1/side-by-side/sk/][Slovenčina
+  (Slovak)]]
+- [[https://vedabase.io/en/library/bg/3/1/side-by-side/ru/][Русский
+  (Russian)]]
+- [[https://vedabase.io/en/library/bg/3/1/side-by-side/et/][Eesti keel
+  (Estonian)]]
+- [[https://vedabase.io/en/library/bg/3/1/side-by-side/da/][Dansk
+  (Danish)]]
+- [[https://vedabase.io/en/library/bg/3/1/side-by-side/cs/][Čeština
+  (Czech)]]
+- [[https://vedabase.io/en/library/bg/3/1/side-by-side/es/][Español
+  (Spanish)]]
+- [[https://vedabase.io/en/library/bg/3/1/side-by-side/nl/][Nederlands
+  (Dutch)]]
+- [[https://vedabase.io/en/library/bg/3/1/side-by-side/de/][Deutsch
+  (German)]]
+- [[https://vedabase.io/en/library/bg/3/1/side-by-side/uk/][українська
+  мова (Ukrainian)]]
+- [[https://vedabase.io/en/library/bg/3/1/side-by-side/lt/][Lietuvių
+  kalba (Lithuanian)]]
+- [[https://vedabase.io/en/library/bg/3/1/side-by-side/pt-br/][Português
+  (Portuguese)]]
+- [[https://vedabase.io/en/library/bg/3/1/side-by-side/fr/][Français
+  (French)]]
+
+<<mm-6>>
+
+Select language
+
+- [[https://vedabase.io/en/library/bg/3/1/][English]]
+- [[https://vedabase.io/nl/library/bg/3/1/][Nederlands (Dutch)]]
+- [[https://vedabase.io/ru/library/bg/3/1/][Русский (Russian)]]
+- [[https://vedabase.io/da/library/bg/3/1/][Dansk (Danish)]]
+- [[https://vedabase.io/et/library/bg/3/1/][Eesti keel (Estonian)]]
+- [[https://vedabase.io/sk/library/bg/3/1/][Slovenčina (Slovak)]]
+- [[https://vedabase.io/es/library/bg/3/1/][Español (Spanish)]]
+- [[https://vedabase.io/de/library/bg/3/1/][Deutsch (German)]]
+- [[https://vedabase.io/uk/library/bg/3/1/][українська мова
+  (Ukrainian)]]
+- [[https://vedabase.io/lt/library/bg/3/1/][Lietuvių kalba
+  (Lithuanian)]]
+- [[https://vedabase.io/sl/][Slovenščina (Slovenian)]]
+- [[https://vedabase.io/fi/][Suomen kieli (Finnish)]]
+- [[https://vedabase.io/cs/library/bg/3/1/][Čeština (Czech)]]
+- [[https://vedabase.io/hu/library/bg/3/1/][Magyar (Hungarian)]]
+- [[https://vedabase.io/fr/library/bg/3/1/][Français (French)]]
+- [[https://vedabase.io/ko/library/bg/3/1/][한국어 (Korean)]]
+- [[https://vedabase.io/pt-br/library/bg/3/1/][Português (Portuguese)]]
+- [[https://vedabase.io/bg/library/bg/3/1/][Български (Bulgarian)]]
+- [[https://vedabase.io/ja/library/bg/3/1/][日本語 (Japanese)]]
+- [[https://vedabase.io/zu/][isiZulu (Zulu)]]
+
+No results found.
+
+<<mm-5>>
+
+Settings
+
+Font size
+
+<<js-rangeslider-0>>
+
+Use Serif Font
+
+Justify Text
+
+<<mm-1>>
+
+Main Menu Navigation
+
+- [[#mm-2][Open submenu
+  (Library)]][[https://vedabase.io/en/library/][Library]]
+- [[#mm-3][Open submenu (Feature
+  Tour)]][[https://vedabase.io/en/features/][Feature Tour]]
+- [[https://vedabase.io/en/contact/][Contact Us]]
+- [[https://vedabase.io/en/donate/][Donate]]
+- [[https://vedabase.io/en/search/][Search]]
+- [[#mm-4][Open submenu
+  (Tools)]][[https://vedabase.io/en/tools/][Tools]]
+
+<<mm-2>>
+
+[[#mm-1][Close submenu (Library)]][[#mm-1][Library]]
+
+- [[https://vedabase.io/en/library/][Books]]
+- [[https://vedabase.io/en/library/transcripts/][Transcripts]]
+- [[https://vedabase.io/en/library/letters/][Letters]]
+
+<<mm-3>>
+
+[[#mm-1][Close submenu (Feature Tour)]][[#mm-1][Feature Tour]]
+
+- [[https://vedabase.io/en/features/][Overview]]
+- [[https://vedabase.io/en/features/library/][Library]]
+- [[https://vedabase.io/en/features/settings/][Settings]]
+- [[https://vedabase.io/en/features/reading-history/][Reading History]]
+- [[https://vedabase.io/en/features/advanced-chapter-view/][Advanced
+  Chapter View]]
+- [[https://vedabase.io/en/features/dual-language-view/][Dual Language
+  View]]
+- [[https://vedabase.io/en/features/user-account/][User Account]]
+- [[https://vedabase.io/en/features/bookmarks/][Bookmarks]]
+- [[https://vedabase.io/en/features/keyboard-shortcuts/][Keyboard
+  shortcuts]]
+- [[https://vedabase.io/en/features/categorization/][Categorization]]
+- [[https://vedabase.io/en/features/search/][Search]]
+
+<<mm-4>>
+
+[[#mm-1][Close submenu (Tools)]][[#mm-1][Tools]]
+
+- [[https://vedabase.io/en/tools/convert-balarama-to-utf8/][Convert from
+  Balarama to UTF8]]
+- [[https://vedabase.io/en/tools/convert-tamal-to-utf8/][Convert Tamal
+  to UTF8]]
+- [[https://vedabase.io/en/tools/convert-russian-vedabase-to-utf8/][Convert
+  Russian Vedabase to UTF8]]
+- [[https://vedabase.io/en/tools/remove-diacritics/][Remove diacritics]]
+
+<<panel>>
+* Paragraph Tools [[#][Close //]]
+  :PROPERTIES:
+  :CUSTOM_ID: paragraph-tools-close
+  :CLASS: pt-title
+  :END:
+Please select paragraph first.
+
+<<subpanel>>
+Suggest this as category.
+
+[[][Yes]] [[][Cancel]]
+
+[[#content][Skip to main content]]
+
+<<mm-0>>
+
+<<header>>
+
+[[https://vedabase.io/en/][Bhaktivedanta Vedabase]]
+
+- [[#main-menu][//  Menu]]
+- [[#settings-menu][//  Settings //]]
+- [[#language-menu][//  English //]]
+- [[https://vedabase.io/en/accounts/login/?next=/en/library/bg/3/1/][// 
+  Sign In]]
+
+<<advanced-view-wrapper>>
+
+[[#view-switcher][Default View //]] [[#page-info-menu][// Page Info //]]
+
+[[https://vedabase.io/en/library/][Library]] »
+[[https://vedabase.io/en/library/bg/][Bhagavad-gītā As It Is]] »
+[[https://vedabase.io/en/library/bg/3/][Chapter Three]]
+
+<<content>>
+
+<<bb871>>
+* Bg. 3.1
+  :PROPERTIES:
+  :CUSTOM_ID: bg.-3.1
+  :END:
+
+** Devanagari
+   :PROPERTIES:
+   :CUSTOM_ID: devanagari
+   :CLASS: section-title none
+   :END:
+
+<<bb567996>>
+अर्जुन उवाच\\
+ज्यायसी चेत्कर्मणस्ते मता बुद्धिर्जनार्दन ।\\
+तत्किं कर्मणि घोरे मां नियोजयसि केशव ॥ १ ॥
+
+** Text
+   :PROPERTIES:
+   :CUSTOM_ID: text
+   :CLASS: section-title none
+   :END:
+
+<<bb873>>
+//arjuna uvāca/\\
+jyāyasī cet karmaṇas te\\
+matā buddhir janārdana\\
+tat kiṁ karmaṇi ghore māṁ\\
+niyojayasi keśava/
+
+** Synonyms
+   :PROPERTIES:
+   :CUSTOM_ID: synonyms
+   :CLASS: section-title
+   :END:
+
+<<bb874>>
+[[https://vedabase.io/en/search/synonyms/?original=arjuna%E1%B8%A5][/arjunaḥ/]]
+[[https://vedabase.io/en/search/synonyms/?original=uv%C4%81ca][/uvāca/]]
+--- Arjuna said;
+[[https://vedabase.io/en/search/synonyms/?original=jy%C4%81yas%C4%AB][/jyāyasī/]]
+--- better;
+[[https://vedabase.io/en/search/synonyms/?original=cet][/cet/]] --- if;
+[[https://vedabase.io/en/search/synonyms/?original=karma%E1%B9%87a%E1%B8%A5][/karmaṇaḥ/]]
+--- than fruitive action;
+[[https://vedabase.io/en/search/synonyms/?original=te][/te/]] --- by
+You;
+[[https://vedabase.io/en/search/synonyms/?original=mat%C4%81][/matā/]]
+--- is considered;
+[[https://vedabase.io/en/search/synonyms/?original=buddhi%E1%B8%A5][/buddhiḥ/]]
+--- intelligence;
+[[https://vedabase.io/en/search/synonyms/?original=jan%C4%81rdana][/janārdana/]]
+--- O Kṛṣṇa;
+[[https://vedabase.io/en/search/synonyms/?original=tat][/tat/]] ---
+therefore;
+[[https://vedabase.io/en/search/synonyms/?original=kim][/kim/]] --- why;
+[[https://vedabase.io/en/search/synonyms/?original=karma%E1%B9%87i][/karmaṇi/]]
+--- in action;
+[[https://vedabase.io/en/search/synonyms/?original=ghore][/ghore/]] ---
+ghastly;
+[[https://vedabase.io/en/search/synonyms/?original=m%C4%81m][/mām/]] ---
+me;
+[[https://vedabase.io/en/search/synonyms/?original=niyojayasi][/niyojayasi/]]
+--- You are engaging;
+[[https://vedabase.io/en/search/synonyms/?original=ke%C5%9Bava][/keśava/]]
+--- O Kṛṣṇa.
+
+** Translation
+   :PROPERTIES:
+   :CUSTOM_ID: translation
+   :CLASS: section-title
+   :END:
+
+<<bb875>>
+*Arjuna said: O Janārdana, O Keśava, why do You want to engage me in
+this ghastly warfare, if You think that intelligence is better than
+fruitive work?*
+
+** Purport
+   :PROPERTIES:
+   :CUSTOM_ID: purport
+   :CLASS: section-title
+   :END:
+
+<<bb876>>
+The Supreme Personality of Godhead Śrī Kṛṣṇa has very elaborately
+described the constitution of the soul in the previous chapter, with a
+view to delivering His intimate friend Arjuna from the ocean of material
+grief. And the path of realization has been recommended: /buddhi-yoga,/
+or Kṛṣṇa consciousness. Sometimes Kṛṣṇa consciousness is misunderstood
+to be inertia, and one with such a misunderstanding often withdraws to a
+secluded place to become fully Kṛṣṇa conscious by chanting the holy name
+of Lord Kṛṣṇa. But without being trained in the philosophy of Kṛṣṇa
+consciousness, it is not advisable to chant the holy name of Kṛṣṇa in a
+secluded place, where one may acquire only cheap adoration from the
+innocent public. Arjuna also thought of Kṛṣṇa consciousness or
+/buddhi-yoga,/ or intelligence in spiritual advancement of knowledge, as
+something like retirement from active life and the practice of penance
+and austerity at a secluded place. In other words, he wanted to
+skillfully avoid the fighting by using Kṛṣṇa consciousness as an excuse.
+But as a sincere student, he placed the matter before his master and
+questioned Kṛṣṇa as to his best course of action. In answer, Lord Kṛṣṇa
+elaborately explained /karma-yoga,/ or work in Kṛṣṇa consciousness, in
+this Third Chapter.
+
+- [[https://vedabase.io/en/library/bg/3/][// Previous]]
+- [[https://vedabase.io/en/library/bg/3/2/][Next //]]
+
+<<para-menu-button>>
+// //
+
+<<footer>>
+
+[[https://vedabase.io/en/donate/][Donate now]] Thanks to Gopalakrishnan
+S; Gert Leerdam; Srikanth Kyatham; Srikanta dasa; HH Bhakti Rasamrita
+Swami; Nilachal; Usha, Kuppuswamy, Vivek, Varsha, Ramani, Rajeswari,
+Raj, Ramya, Ridhvik, Radha; Bimal Gupta; Jayadharma das; Radhapati Das;
+Aishwarya Balaraj; Gostabihari das and Mahavisnupriya dasi; Yogendra
+Sharad Puranik;
+[[https://in.linkedin.com/in/indradyumna-swami][Indradyumna Swami]];
+Krishna & Family; Thomas; Geetanjali Nath; Mario; Joeie; Susheela and
+Rama Krishna Reddy Patlolla; Jai Devaki Parks; Ashmi Chakraborty;
+Hari-kirtana das; Ramesta das; Prasad Buddhavarapu; Harakumara dasa;
+Kresna Sucandra; Late Mr. S. Sundaram; Esekiel Jaggernauth; Isvari Priya
+DD & Lokadhyaksa dasa and all others for
+[[https://vedabase.io/en/donate/][supporting]] this site.
+
+His Divine Grace A.C. Bhaktivedanta Swami Prabhupāda, Founder-Ācārya of
+the International Society for Krishna Consciousness.\\
+Content used with permission of © The Bhaktivedanta Book Trust
+International, Inc. All rights reserved.
+
+<<helpModal>>
+
+×
+**** Keyboard Shortcuts
+     :PROPERTIES:
+     :CUSTOM_ID: helpModalLabel
+     :CLASS: modal-title
+     :END:
+
+? - shows list of shortcuts you are just reading\\
+[ - navigation for previous page\\
+] - navigation for next page\\
+s - toggle serif/san-serif\\
+a - toggle justify text align\\
+} - increase font size\\
+{ - decrease font size\\
+
+Advanced Chapter view:
+
+1 - toggle verse-text in advanced view\\
+2 - toggle synonyms in advanced view\\
+3 - toggle translation in advanced view\\
+4 - toggle purport in advanced view\\
+j - scroll to next verse\\
+k - scroll to previous verse\\
+
+<<mm-blocker>>

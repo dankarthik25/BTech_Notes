@@ -1,0 +1,47 @@
+
+* Empirical Mode Decompositions From Basics to Recent Results
+** Introduction
+Fundamental problems in science and engineering have become increasingly interdisciplinary, requiring knowledge and expert input from several areas of research. This is both challenging and exciting. The primary challenge faced by researchers is to keep abreast of new developments in tangential research areas to their own, not to mention those which are considered different. The increasing complexity of newly arising problems has on the other hand, invariably required a multifaceted approach to viewing and understanding them, and ultimately produce a solution.
+
+** Extracting Low Frequency from High Frequence
+*** Implemented by Huang '98
+Identify(locally) fastest oscillation, substract it to inicial signal  and iteratively on residual.
+Steps :
+[] Identify local max and min 
+[] deduce upper/lower envelope by interpolation(cubic splines)
+  [] Substract mean envelop from signal
+  [] iterate untill envelop is zero.
+
+**  
+From above therome :
+It recurssively layer by layer produces signal.
+But in upper layer may contain high frequency signal
+
+It fails :
+IF it has two or more componets which are interlinking
+
+Advangaes :
+Locality : Operates at the scale of one osillation.
+Adaptativitly : The decomposition is fully data-driven.
+Arbitrary oscillation [sin , square, trinagle, parabolic, cubic, log, exponential ...etc]- No  assumption on hormonic structure of oscillation.
+multi-resolution :  The iterative process  explores sequentially the a nature constitutive scales of a signal.
+
+Performace  evaluation - Decompositon is defined as the output of the algorithm ( no analytic defination) = >  need of numerical sumulation in well-controlled situation.
+[NO GOOD THEORY WHICH ]
+** Emd (approximation with no convergence in theory and )    
+Signal  = Emd(signal )
+
+Emd(signal ) = fast oscillation signal + slow oscillation signal
+
+Emd(signal ) = fast oscillation signal + Emd(slow oscillation signal)
+
+     seperattion fast and slow data driven
+     local analysis based on extema and scale depends on signal.
+NO THEORETICALL FRAe WORK
+
+** Discrete Wavelet Transformation ( sepration(prior dynamic filtering) based on details NOT on approximation)
+         signal  =  approximation + detials 
+both locall and global(bandwidh)
+sound in mathematical ground.
+
+     
